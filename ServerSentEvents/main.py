@@ -5,7 +5,7 @@ import asyncio
 
 # Client Code on browser
 
-# let sse = new EventSource("http://localhost:8080/stream");
+# let sse = new EventSource("http://localhost:8000/stream");
 # sse.onmessage = console.log
 
 

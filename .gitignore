@@ -2,3 +2,6 @@ LongPolling/env/*
 pub&sub/env/*
 ServerSentEvents/env/*
 ShortPolling/env/*
+ServerSentEvents/__pycache__/*
+LongPolling/__pycache__/*
+ShortPolling/__pycache__/*

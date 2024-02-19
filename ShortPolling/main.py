@@ -35,7 +35,10 @@ async def submit():
 @app.get("/status/{jobid}")
 async def status(jobid):
     print(f"Got status request for {jobid} with progress {jobs[jobid]}")
-    return JSONResponse({"progress": jobs[jobid]})
+    msg = jobs[jobid]
+    if msg == 100:
+        msg = "Completed"
+    return JSONResponse({"progress": msg})
 
 
 # Client Use 
